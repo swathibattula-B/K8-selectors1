@@ -18,12 +18,12 @@ spec:
           - key: project
             operator: NotIn
             values:
-            - amazon
+            - roboshop
   containers:
   - name: nginx
     image: nginx
   tolerations:
-  - key: "project"
+  - key: "hardware"
     operator: "Equal"
-    value: "roboshop"
-    effect: "NoExecute"             
+    value: "gpu"
+    effect: "NoExecute"            

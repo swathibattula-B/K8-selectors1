@@ -23,7 +23,7 @@ spec:
   - name: nginx
     image: nginx
   tolerations:
-  - key: "hardware"
+  - key: "project"
     operator: "Equal"
-    value: "gpu"
+    value: "roboshop"
     effect: "NoExecute"             
